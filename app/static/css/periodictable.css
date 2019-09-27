@@ -1,0 +1,50 @@
+/*
+ *
+ * General Theme
+ *
+ */
+    
+.mv-body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+  background-color: #ffffff;
+/*  color: #fff;
+  background: #2F2F2F;*/
+  /*font-family: 'Noto Sans', sans-serif;*/
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.mv-table {
+  width: 800px;
+  margin: auto;
+}
+
+.inline li {
+  display: inline;
+}
+
+.bk-root {
+  max-width: 1200px;
+}
+
+.bk-root .bk-slick-header-column.bk-ui-state-default {
+  height: 25px!important;
+}
+
+.toolbarparent {
+  width:100%;
+  text-align: center;
+}
+
+.toolbarchild {
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+  padding: 20px;
+}

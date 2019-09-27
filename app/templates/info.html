@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <div class="row" style="max-width: 800px;margin: 0 auto;min-height: 800px;">
+
+        <h1>Info</h1>
+
+        <p> Author: <a href="http://www.hussainather.com">S. Hussain Ather/a></p>
+        <p> app version: {{ version }} </p>
+        <p> data version: {{ dataversion }} </p>
+
+        <ul>
+          <li>github repo: <a href="http://github.com/hussainather/periodictable">github.com:hussainather/periodic.git</a></li>
+          <li>documentation: in progress</li>
+        </ul>
+
+        <h2> Local installation </h2>
+        <p>
+        If you would like to try the app locally clone the repository
+
+        <pre>git clone git@github.com:hussainather/periodictable.git</pre>
+
+        </p>
+
+        <h2> Dependencies </h2>
+
+        <ul>
+          <li>flask</li>
+          <li>gunicorn</li>
+          <li>bokeh</li>
+          <li>numpy</li>
+          <li>pandas</li>
+          <li>periodictable</li>
+        </ul>
+
+        <p>If you want to run it locally then I recommend installing <a href="https://www.theforeman.org/"><code>foreman</code></a> too.</p>
+
+    </div>
+
+{% endblock %}

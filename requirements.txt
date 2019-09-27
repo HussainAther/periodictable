@@ -1,0 +1,8 @@
+flask
+gunicorn
+bokeh>=0.12.4
+numpy
+pandas
+sqlalchemy
+periodictable
+matplotlib

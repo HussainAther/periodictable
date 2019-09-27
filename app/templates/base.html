@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+
+    <meta name="description" content="Periodic Table">
+    <meta name="author" content="S. Hussain Ather">
+
+    <title>periodictable</title>
+
+    {% block header %}
+    {% endblock %}
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+
+    <link href="{{ url_for('static', filename='css/periodictable.css') }}" type="text/css" rel="stylesheet" />
+
+  </head>
+  <body class="mv-body">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a href="../" class="navbar-brand">Periodic</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li> <a href="/periodic/"> Periodic Table</a> </li>
+            <li> <a href="/correlations/"> Correlations </a> </li>
+            <li> <a href="/data/"> Data </a> </li>
+            <li> <a href="/info/"> Info </a> </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row center-block">
+
+        {% block content %}
+        {% endblock %}
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="footer-col-wrapper">
+        <div class="col-md-12 text-center">
+
+          <hr/>
+
+          <p class="text-muted">
+            <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2019 by S. Hussain Ather
+          </p>
+
+          <div class="social text-muted" style="font-size: 32px;">
+          <ul class="list-inline">
+          <li>
+            <a href="https://github.com/hussainather/periodictable"> <i class="fa fa-github" aria-hidden="true"></i>  </a>
+          </li>
+
+        </ul>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87210403-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
