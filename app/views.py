@@ -17,7 +17,7 @@ from bokeh.models.mappers import (CategoricalColorMapper, LinearColorMapper,
 import flask
 from flask import render_template
 
-from perioditctable import app, __version__
+from periodictable import app, __version__
 
 
 PLOT_WIDTH = 1150
