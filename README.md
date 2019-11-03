@@ -9,5 +9,5 @@ convenient [python] API for manipulating and visualizing [periodic table] data.
 
 ## Running 
 
-# run the app locally, it should be available at: http://localhost:5000
-`foreman start`
+Run the app locally. 
+It should be available at: http://localhost:5000 after running `foreman start`.
